@@ -12,17 +12,16 @@
     color: #727272;
 }
 
-body {
-  margin: 0 240px;
-  padding: 0;
+/* header styles */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
 }
 
-/* header styles */
-
-header {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 240px;
 }
 
 nav ul{
@@ -36,13 +35,11 @@ nav ul li a {
 
   /* responsive styles */
   @media screen and (max-width: 576px) {
-    body {
-      margin: 0 20px;
-      padding: 0;
-    }
-    header {
+    
+    .navbar {
       flex-direction: column;
       align-items: center;
+      margin: 0 20px;
     }
     nav ul {
       padding: 0;
@@ -52,6 +49,7 @@ nav ul li a {
   /* hero section modification */
 
 .hero{
+    margin: 0 240px;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -85,6 +83,10 @@ nav ul li a {
 
 /* responsive styles for hero section */
 @media screen and (max-width: 576px) {
+    .hero {
+        margin: 0 20px;
+        margin-top: 30px;
+    }
     .hero h1 {
         font-size: 36px;
         margin-bottom: 10px;
