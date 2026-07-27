@@ -10,6 +10,8 @@
 
 .dark-3{
     color: #727272;
+    line-height: 1.5em;
+    font-size: 16px;
 }
 
 /* header styles */
@@ -73,6 +75,7 @@ nav ul li a {
     padding: 15px 30px;
     font-size: 18px;
     color: #fff;
+    margin-top: 10px;
     margin-bottom: 40px;
     background: #FF900E;
     border-radius: 8px;
@@ -123,4 +126,22 @@ nav ul li a {
     width: 100%;
     height: auto;
     border-radius: 8px;
+}
+
+@media screen and (max-width: 576px) {
+    .quickfeature {
+        flex-direction: column-reverse;
+        margin: 0 20px;
+        margin-top: 40px;
+        gap: 10px;
+    }
+    .div-w {
+        width: 100%;
+    }
+    .feature-images {
+        grid-template-columns: 1fr;
+    }
+    .feature-text {
+        text-align: center;
+    }
 }
